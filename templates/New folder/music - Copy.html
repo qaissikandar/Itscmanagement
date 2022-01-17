@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+      href="{{url_for('.static', filename='css/musiccss.css')}}">
+    <title>Title</title>
+</head>
+<body>
+            <table style="width:100%">
+              <tr>
+                <th>Name of Equipments</th>
+                <th>Number of items</th>
+                <th>Reg</th>
+
+              </tr>
+                {% for i in range(0,length) %}
+              <tr>
+
+                  <td><center>{{ Name[i] }}</center></td>
+                  <td><center>{{ number[i] }}</center></td>
+                  <td><center>{{ reg[i] }}</center></td>
+
+              </tr>
+                {% endfor %}
+            </table>
+</body>
+</html>

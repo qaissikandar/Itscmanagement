@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+      href="{{url_for('.static', filename='css/itmemberscss.css')}}">
+    <title>Title</title>
+</head>
+<body>
+            <table style="width:100%">
+              <tr>
+                <th>Username</th>
+                <th>Password</th>
+
+              </tr>
+                {% for i in range(0,length) %}
+              <tr>
+
+                  <td><center>{{ Name[i] }}</center></td>
+                  <td><center>{{ REG_NO[i] }}</center></td>
+
+              </tr>
+                {% endfor %}
+            </table>
+</body>
+</html>

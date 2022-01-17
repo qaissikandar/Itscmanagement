@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts Of System</title>
+</head>
+
+<body>
+    <br>
+    <div>
+        <h1 style="display: inline">All Posts Here: </h1>
+        <a style="display: inline" class="btn btn-success float-right" href="/posts">+ Back to posts</a>
+    </div>
+    <br>
+    <hr>
+    {% for val in posts%}
+    <h3>title: {{val[1]}}</h3>
+    <h3>comment: {{val[2]}}</h3>
+    <br>
+    <hr>
+    {% endfor %}
+
+</body>
+
+</html>
